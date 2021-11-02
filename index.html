@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Front-Reto3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="Styles.css">
+    <script type="text/javascript" src="js/category.js"></script>
+    <script type="text/javascript" src="js/ortopedic.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <script type="text/javascript" src="js/reservation.js"></script>
+</head>
+
+<body>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+
+    <h2> Categorias </h2>
+
+    <table style="width: 40%">
+        <tr>
+            <th colspan='2'> Categorias </th>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" id="Cname" placeholder="name">
+                <input type="text" id="Cdescription" placeholder="description">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+                <button onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="resultadoCategory"></div>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+
+    <h2> Ortopedic </h2>
+
+        <table style="width: 40%;">
+            <tr>
+                <th colspan='3'> Ortopedic </th>
+            </tr>
+    
+            <tr>
+                <td>
+                    <input type="text" id="Oname" placeholder="name">
+                    <input type="text" id="Obrand" placeholder="brand">
+                    <input type="number" id="Oyear" placeholder="year">
+                    <input type="text" id="Odescription" placeholder="description">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <button onclick="guardarInformacionOrtopedic()">Guardar Ortopedic</button>
+                    <button onclick="traerInformacionOrtopedic()"> Consultar Ortopedic</button>
+                </td>
+            </tr>
+        </table>
+
+    <div id="resultadoOrtopedic"></div>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+
+    <h2> Clientes </h2>
+
+    <table style="width: 40%">
+        <tr>
+            <th colspan='3'> Clientes </th>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" id="Clemail" placeholder="email">
+                <input type="text" id="Clpassword" placeholder="password">
+                <input type="text" id="Clname" placeholder="name">
+                <input type="number" id="Clage" placeholder="age">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button onclick="guardarInformacionClient()">Guardar Client</button>
+                <button onclick="traerInformacionClient()"> Consultar Client</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="resultadoClient"></div>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+
+    <h2> Mensajes </h2>
+
+    <table style="width: 40%">
+
+        <tr>
+            <th colspan='3'> Mensajes </th>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" id="MessageText" placeholder="messageText">
+                <button onclick="guardarInformacionMessage()">Guardar Message</button>
+                <button onclick="traerInformacionMessage()"> Consultar Message</button>
+            </td>
+        </tr>
+
+    </table>
+
+    <div id="resultadoMessage"></div>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+
+    <h2> Reservaciones </h2>
+
+    <table style="width: 40%">
+        <tr>
+            <th>Fecha Inicial</th>
+            <th>Fecha Final</th>
+        </tr>
+
+        <tr>
+            <td> <input type="date" id="StartDate" placeholder="startDate"> </td>
+            <td> <input type="date" id="DevolutionDate" placeholder="devolutionDate"> </td>
+        </tr>
+
+        <tr>
+            <td><button onclick="guardarInformacionReservation()">Guardar Reservation</button></td>
+            <td><button onclick="traerInformacionReservation()"> Consultar Reservation</button></td>
+        </tr>
+    </table>
+
+    <div id="resultadoReservation"></div>
+
+    <br>
+
+    <table style='width: 40%'>
+        <tr>
+            <th colspan="2"> Consultar las reservas creadas entre dos fechas </th>
+        </tr>
+        <tr>
+            <th> Fecha inicial </th>
+            <th> Fecha final </th>
+        </tr>
+        <tr>
+            <td> <input type="date" id="RstarDate" placeholder="descripcion"> </td>
+            <td> <input type="date" id="RdevolutionDate" placeholder="descripcion"> </td>
+        </tr>
+        <tr>
+            <td colspan="2"> <button onclick="traerReporteDate()"> Generar Reporte por fecha </button> </td>
+        </tr>
+    </table>
+
+    <div id="resultadoDate"></div>
+
+    <br>
+
+    <table style='width: 40%'>
+        <tr>
+            <th>
+                Estado de las Reservas
+                <button onclick="estadoReportes()"> Consultar </button>
+            </th>
+        </tr>
+    </table>
+
+    <div id="resultadoStatus"></div>
+
+    <br>
+
+    <table style='width: 40%'>
+        <tr>
+            <th>
+                Reservas hechas por los Clientes
+                <button onclick="traerReporteClientes()"> Consultar </button>
+            </th>
+        </tr>
+    </table>
+
+    <div id="resultadoClientes"></div>
+
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+
+</body>
+
+</html>
