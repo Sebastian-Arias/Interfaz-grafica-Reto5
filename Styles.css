@@ -1,16 +1,32 @@
+body{
+    margin:  0;
+    padding: 0;
+    background: url(medicine.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
 table, th, td {
-    border: 1px solid rgb(145, 24, 24);
+    border: 1px solid #11225a;
     border-collapse: collapse;
     text-align: center;
     font-family: Comic Sans MS;
+    font-style: italic;
+    align-items: center;
+    color: #0d193f;
 }
 
 button {
-    background-color: rgb(192, 184, 184);
+    background-color: rgb(200, 240, 185);
 }
 
 h2{
     margin: 0px 15%;
     font-family: 'Courier New', Courier, monospace;
+    color: #0e2f9b;
 }
 
+input{
+    background-color:rgb(166, 233, 228);
+}

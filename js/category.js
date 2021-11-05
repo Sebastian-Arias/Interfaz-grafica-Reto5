@@ -74,7 +74,7 @@ function actualizarInformacionCategory(idElemento){
             $("#Cname").val("");
             $("#Cdescription").val("");
             traerInformacionCategorias();
-            alert("se ha guardado el dato");
+            alert("Se han actualizado los datos");
         }
     });
 
@@ -90,7 +90,7 @@ function borrarElementoCategory(idElemento){
 
         success:function(respuesta){
             traerInformacionCategorias();
-            alert("se ha guardado el dato");
+            alert("Se ha Eliminado el dato.");
         }
 
     });

@@ -85,7 +85,7 @@ function actualizarInformacionOrtopedic(idElemento){
             $("#Oyear").val("");
             $("#Odescription").val("");
             traerInformacionOrtopedic();
-            alert("se ha Actualizado")
+            alert("Se han actualizado los datos")
         }
     });
 
@@ -101,7 +101,7 @@ function borrarElementoOrtopedic(idElemento){
 
         success:function(respuesta){
             traerInformacionOrtopedic();
-            alert("se ha guardado el dato");
+            alert("Se ha Eliminado el dato.");
         }
 
     });

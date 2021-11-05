@@ -85,7 +85,7 @@ function actualizarInformacionClient(idElemento1){
             $("#Clname").val("");
             $("#Clage").val("");
             traerInformacionClient();
-            alert("se ha guardado el dato");
+            alert("Se han actualizado los datos");
         }
     });
 
@@ -101,7 +101,7 @@ function borrarElementoClient(idElemento){
 
         success:function(respuesta){
             traerInformacionClient();
-            alert("se ha guardado el dato");
+            alert("Se ha Eliminado el dato.");
         }
 
     });

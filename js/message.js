@@ -68,7 +68,7 @@ function actualizarInformacionMessage(idElemento){
             $("#id").val("");
             $("#MessageText").val("");
             traerInformacionMessage();
-            alert("se ha Actualizado")
+            alert("Se han actualizado los datos")
         }
     });
 
@@ -84,7 +84,7 @@ function borrarElementoMessage(idElemento){
         success:function(respuesta){
             $("#resultadoMessage").empty();
             traerInformacionMessage();
-            alert("Se ha Eliminado.")
+            alert("Se ha Eliminado el dato.")
         }
     });
 }

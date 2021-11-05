@@ -73,7 +73,7 @@ function actualizarInformacionReservation(idElemento){
             $("#StartDate").val("");
             $("#DevolutionDate").val("");
             traerInformacionReservation();
-            alert("se ha guardado el dato");
+            alert("Se han actualizado los datos");
         }
     });
 
@@ -89,7 +89,7 @@ function borrarInformacionReservation(idElemento){
 
         success:function(respuesta){
             traerInformacionReservation();
-            alert("se ha guardado el dato");
+            alert("Se ha Eliminado el dato.");
         }
         
     });
